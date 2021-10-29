@@ -25,6 +25,11 @@ body {
     min-height: 800px;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
+
 header {
     width: 100%;
     position: fixed;
@@ -93,4 +98,78 @@ main {
     background-color: rgba(74, 74, 74, 0.5);
     padding: 0.5em;
     font-size: 0.9em;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 80px;
+    width: 100%;
+    background-color: black;
+}
+
+footer nav {
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+    color: white;
+}
+
+nav .footer-nav-buttons li {
+    text-align: center;
+    display: flex;
+    align-items: center;
+} 
+
+footer nav .col-left {
+    flex-basis: 15%;
+}
+
+footer nav .col-left ul.footer-nav-buttons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    list-style-type: none;
+}
+
+footer nav .col-center ul.footer-nav-buttons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    list-style-type: none;
+}
+
+footer nav .col-right ul.footer-nav-buttons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    list-style-type: none;
+}
+
+footer nav i {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+footer nav i.fa-chevron-up {
+    font-size: 1em;
+    padding: 1em;
+}
+
+footer nav .col-center {
+    flex-basis: 60%;
+}
+
+footer nav .col-right {
+    flex-basis: 15%;
+}
+
+footer nav li .nav-icon {
+    display: flex;
+    flex-direction: column;
+
 }
