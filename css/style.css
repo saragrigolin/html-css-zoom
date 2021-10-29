@@ -198,3 +198,7 @@ footer nav i.fa-chevron-up:hover {
     background-color: rgb(167, 167, 167);
     border-radius: 10%;
 }
+
+footer nav i.fa-share-square {
+    color: green;
+}
