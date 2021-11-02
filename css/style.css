@@ -33,10 +33,9 @@ a {
 
 header {
     width: 100%;
-    position: fixed;
+    /* position: fixed;
     top: 0;
-    left:
-    z-index: 9999;
+    z-index: 9999; */
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -70,9 +69,10 @@ header nav ul.nav-buttons span {
 
 main {
     display: flex;
-    height: calc(100%);
-    margin-top: 35px;
-    padding-bottom: 80px;
+    height: calc(100% - (35px + 80px));
+    /* margin-top: 35px;
+    padding-bottom: 80px; */
+    overflow: auto;
 }
 
 .main-container {
@@ -103,9 +103,9 @@ main {
 }
 
 footer {
-    position: fixed;
+    /* position: fixed;
     bottom: 0;
-    left: 0;
+    left: 0; */
     height: 80px;
     width: 100%;
     background-color: #0E0E0E;
@@ -147,15 +147,12 @@ footer nav .col-center ul.footer-nav-buttons {
 }
 
 footer nav .col-right {
-    height: 100%;
-}
-
-footer nav .col-right {
     display: flex;
     align-items: center;
     background-color: #4A4A4A;
     padding: 0 0.5em;
     color: red;
+    height: 100%;
 }
 
 footer nav i {
